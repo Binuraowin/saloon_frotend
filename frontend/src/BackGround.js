@@ -18,10 +18,12 @@ import {
     Row,
     Col
 } from 'reactstrap';
+import Appointment from "./Appointement";
 
 const BackGround = () => {
     return (
-        <Card inverse>
+        <div>
+            <Card inverse>
                 <CardImg width="100%" src={background} alt="Card image cap" />
                 <CardImgOverlay>
 
@@ -32,6 +34,10 @@ const BackGround = () => {
                     </CardText>
                 </CardImgOverlay>
             </Card>
+            <Appointment/>
+        </div>
+
+
 
     );
 }

@@ -25,34 +25,37 @@ const Cards = () => {
     return (
         <CardDeck>
             <Card>
-                <CardImg top width="100%" src={img6} alt="Card image cap" />
+                <CardImg top width="60px" src={img6} alt="Card image cap" />
                 <CardImgOverlay>
                     <CardTitle>{title}</CardTitle>
                 </CardImgOverlay>
-
-            </Card>
-            <Card>
-                <CardImg top width="100%" src={img6} alt="Card image cap" />
-                <CardImgOverlay>
-                    <CardTitle>{title}</CardTitle>
-                </CardImgOverlay>
-
             </Card>
             <Card >
-                <CardImg top width="100%" src={img6} alt="Card image cap" />
+                <CardImg top width="60px" src={img6} alt="Card image cap" />
                 <CardImgOverlay>
                     <CardTitle>{title}</CardTitle>
                 </CardImgOverlay>
-
             </Card>
             <Card>
-                <CardImg top width="100%" src={img6} alt="Card image cap" />
+                <CardImg top width="60px" src={img6} alt="Card image cap" />
                 <CardImgOverlay>
                     <CardTitle>{title}</CardTitle>
                 </CardImgOverlay>
-
+            </Card>
+            <Card>
+                <CardImg top width="60px" src={img6} alt="Card image cap" />
+                <CardImgOverlay>
+                    <CardTitle>{title}</CardTitle>
+                </CardImgOverlay>
+            </Card>
+            <Card>
+                <CardImg top width="60px" src={img6} alt="Card image cap" />
+                <CardImgOverlay>
+                    <CardTitle>{title}</CardTitle>
+                </CardImgOverlay>
             </Card>
         </CardDeck>
+
     );
 }
 
