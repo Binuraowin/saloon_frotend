@@ -61,7 +61,7 @@ const Appointment = () => {
                     <option value="binura">binura</option>
                     <option value="owin">owin</option>
                 </select>
-                <button>Add Blog</button>
+                <button>Make an Appointment</button>
             </form>
         </div>
         // <div>

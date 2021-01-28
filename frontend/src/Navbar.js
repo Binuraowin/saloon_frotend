@@ -9,10 +9,13 @@ const Navbar = () => {
             <h1>The Saloon</h1>
             <div className="links">
                 <Link to="/">Home</Link>
-                <Link to="/create" style={{
+                <Link to="/gallery">Gallery</Link>
+                <Link to="/create">Services</Link>
+                <Link to="/">About</Link>
+                <Link to="/appointment" style={{
                     color:"pink",
                     backgroundColor:"green",
-                }}>New Blog</Link>
+                }}>Appointment</Link>
             </div>
         </nav>
     );
