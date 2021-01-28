@@ -77,3 +77,6 @@ code {
   margin: 40px auto;
   padding: 20px;
 }
+.card-title{
+  align-items: stretch;
+}
