@@ -1,24 +1,39 @@
 import {Link} from "react-router-dom";
 import background from "./assets/images/background/img5.jpg";
-
+import {
+    Card,
+    CardImg,
+    CardImgOverlay,
+    CardText,
+    CardBody,
+    CardTitle,
+    CardSubtitle,
+    CardColumns,
+    CardGroup,
+    CardDeck,
+    CardLink,
+    CardHeader,
+    CardFooter,
+    Button,
+    Row,
+    Col
+} from 'reactstrap';
 
 const BackGround = () => {
     return (
-        <section class="hero-wrap js-fullheight" style={{ backgroundImage: `url(${background})` }} data-stellar-background-ratio="0.5">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
-                    <div class="col-lg-12 ftco-animate d-flex align-items-center">
-                        <div class="text text-center">
-                            <span class="subheading" >Welcome to Haircare</span>
-                            <h1 class="mb-4"  style="color: black;" >We are professional care for your hair</h1>
-                            <p><a href="#appointment" class="btn btn-primary btn-outline-primary px-4 py-2">Book now</a></p>
-                        </div>
-                    </div>
-                </div>
 
-        </div>
-</section>
+            <Card inverse>
+                <CardImg width="100%" src={background} alt="Card image cap" />
+                <CardImgOverlay>
+
+                    <CardTitle>Card Title</CardTitle>
+                    <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+                    <CardText>
+                        <small className="text-muted">Last updated 3 mins ago</small>
+                    </CardText>
+                </CardImgOverlay>
+            </Card>
+
     );
 }
 

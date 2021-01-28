@@ -15,7 +15,7 @@ function App() {
                 <div className="content">
                     <Switch>
                         <Route exact path="/">
-                            <Appointment/>
+                            <BackGround/>
                         </Route>
                         <Route exact path="/appointment">
                             <Appointment/>
@@ -27,7 +27,7 @@ function App() {
                             <Workers/>
                         </Route>
                         <Route path="/gallery">
-                            <BackGround/>
+                            <Cards/>
                         </Route>
                     </Switch>
                 </div>
