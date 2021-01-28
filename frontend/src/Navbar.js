@@ -11,7 +11,7 @@ const Navbar = () => {
                 <Link to="/">Home</Link>
                 <Link to="/gallery">Gallery</Link>
                 <Link to="/create">Services</Link>
-                <Link to="/">About</Link>
+                <Link to="/workers">About</Link>
                 <Link to="/appointment" style={{
                     color:"pink",
                     backgroundColor:"green",

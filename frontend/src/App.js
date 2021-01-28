@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import Workers from "./Workers";
 import Appointment from "./Appointement";
 import Cards from "./Card";
+import BackGround from "./BackGround";
 
 
 function App() {
@@ -22,12 +23,12 @@ function App() {
                         <Route  path="/create">
                             <Cards/>
                         </Route>
-                        {/*<Route path="/blogs/:id">*/}
-                        {/*    <BlogDetails />*/}
-                        {/*</Route>*/}
-                        {/*<Route path="*">*/}
-                        {/*    <NotFound />*/}
-                        {/*</Route>*/}
+                        <Route path="/workers">
+                            <Workers/>
+                        </Route>
+                        <Route path="/gallery">
+                            <BackGround/>
+                        </Route>
                     </Switch>
                 </div>
                 <Footer/>

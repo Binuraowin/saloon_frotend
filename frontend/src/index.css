@@ -52,7 +52,7 @@ code {
 .navbar {
   padding: 20px;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   max-width: 600px;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
