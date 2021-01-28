@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Workers from "./Workers";
 import Appointment from "./Appointement";
+import Cards from "./Card";
 
 
 function App() {
@@ -15,9 +16,9 @@ function App() {
                         <Route exact path="/">
                             <Appointment/>
                         </Route>
-                        {/*<Route  path="/create">*/}
-                        {/*    <Create />*/}
-                        {/*</Route>*/}
+                        <Route  path="/create">
+                            <Cards/>
+                        </Route>
                         {/*<Route path="/blogs/:id">*/}
                         {/*    <BlogDetails />*/}
                         {/*</Route>*/}
