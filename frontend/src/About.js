@@ -1,26 +1,31 @@
 import './css/style.css'
 import Workers from "./Workers";
-import {Col, Row} from "reactstrap";
+import {Card, CardBlock, CardBody, CardImgOverlay, Col, Row} from "reactstrap";
+import background from "./assets/images/vidcover.jpg";
+import video from "./assets/images/movie.mp4"
+import ReactPlayer from 'react-player/vimeo'
 
-
+function playVideo() {
+    this.refs.vidRef.play();
+}
 
 const About = () => {
+
     return (
         <div>
             <div>
                 <Workers/>
             </div>
+            <br/>
+            <br/>
             <div>
                 <Row>
                     <Col>
-                        <div style={{backgroundImage: `url("vidcover.jpg")`}}
+                        <br/>
+                        <br/>
 
-                             // style="background-image: url(vidcover.jpg);"
-                            >
-                            <a href="https://vimeo.com/385010495">
-                                {/*<span className="icon-play"></span>*/}
-                            </a>
-                        </div>
+                                <ReactPlayer url='https://vimeo.com/385010495' />
+
                     </Col>
                     <Col>
                         <div className="heading-section mb-4 mt-md-5">
