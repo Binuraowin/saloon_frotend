@@ -5,6 +5,8 @@ import Workers from "./Workers";
 import Appointment from "./Appointement";
 import Cards from "./Card";
 import BackGround from "./BackGround";
+import ServiceList from "./ServiceList";
+import About from "./About";
 
 
 function App() {
@@ -20,11 +22,11 @@ function App() {
                         <Route exact path="/appointment">
                             <Appointment/>
                         </Route>
-                        <Route  path="/create">
-                            <Cards/>
+                        <Route  path="/services">
+                            <ServiceList/>
                         </Route>
-                        <Route path="/workers">
-                            <Workers/>
+                        <Route path="/about">
+                            <About/>
                         </Route>
                         <Route path="/gallery">
                             <Cards/>
