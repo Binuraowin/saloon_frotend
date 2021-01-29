@@ -12,10 +12,7 @@ const Navbar = () => {
                 <Link to="/gallery">Gallery</Link>
                 <Link to="/create">Services</Link>
                 <Link to="/workers">About</Link>
-                <Link to="/appointment" style={{
-                    color:"pink",
-                    backgroundColor:"green",
-                }}>Appointment</Link>
+                <Link to="/appointment">Appointment</Link>
             </div>
         </nav>
     );

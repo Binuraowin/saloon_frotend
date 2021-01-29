@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-import background from "./assets/images/background/86517.jpg";
+import background from "./assets/images/background/86514.jpg";
 import {
     Card,
     CardImg,
@@ -23,14 +23,16 @@ import Workers from "./Workers";
 import ServiceList from "./ServiceList";
 import Navbar from "./Navbar";
 
-const BackGround = () => {
+const Home = () => {
     return (
         <div>
             <Card inverse className="overlay-bg">
                 <CardImg width="100%" src={background} alt="Card image cap" />
 
                 <CardImgOverlay className="bg-overlay">
-
+                    <div className="navin-bg">
+                        <Navbar/>
+                    </div>
 
 
                     <CardTitle className="overlay-title"><br/>
@@ -57,5 +59,4 @@ const BackGround = () => {
     );
 }
 
-export default BackGround;
-
+export default Home;
