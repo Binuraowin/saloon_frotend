@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <footer className="ftco-footer ftco-section">
+        <footer className="ftco-footer ftco-section" style={{}}>
             <div className="container">
                 <div className="row mb-5">
                     <div className="col-md">

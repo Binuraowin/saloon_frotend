@@ -70,6 +70,7 @@ const ServiceList = () => {
                 </div>
                 <br/>
                 <div className="align-content-between">
+                    <br/><br/>
                     <Appointment/>
                 </div>
 

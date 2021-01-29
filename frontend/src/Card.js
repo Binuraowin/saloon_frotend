@@ -23,13 +23,14 @@ import {useState} from "react";
 const Cards = () => {
     const [title, setTitle] = useState('Title');
     return (
-        <CardDeck>
+        <CardGroup>
             <Card>
                     <CardImg top width="100%" src={img6} alt="Card image cap" />
                 <CardImgOverlay>
                     <CardTitle>{title}</CardTitle>
                 </CardImgOverlay>
             </Card>
+
             <Card >
                 <CardImg top width="100%" src={img6} alt="Card image cap" />
                 <CardImgOverlay>
@@ -48,7 +49,7 @@ const Cards = () => {
                     <CardTitle>{title}</CardTitle>
                 </CardImgOverlay>
             </Card>
-        </CardDeck>
+        </CardGroup>
 
     );
 }
