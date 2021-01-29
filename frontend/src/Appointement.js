@@ -44,6 +44,7 @@ const Appointment = () => {
                 />
                 <label>Consumer:</label>
                 <select
+                    className="bg-light p-2 border"
                     value={author}
                     onChange={(e) => setAuthor(e.target.value)}
                 >
@@ -51,6 +52,7 @@ const Appointment = () => {
                     <option value="owin">owin</option>
                 </select>
                 <select
+                    className="bg-light p-2 border"
                     value={author}
                     onChange={(e) => setAuthor(e.target.value)}
                 >

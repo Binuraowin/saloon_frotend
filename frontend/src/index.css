@@ -93,8 +93,9 @@ code {
 
 }
 .artists-header h2{
-  color: white;
+  color: black;
   font-size: 40px;
+  font-weight: bold;
 
 }
 .artists-header p{

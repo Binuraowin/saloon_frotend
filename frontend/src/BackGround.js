@@ -19,6 +19,7 @@ import {
     Col
 } from 'reactstrap';
 import Appointment from "./Appointement";
+import Workers from "./Workers";
 
 const BackGround = () => {
     return (
@@ -34,7 +35,11 @@ const BackGround = () => {
                     </CardText>
                 </CardImgOverlay>
             </Card>
+            <br/>
+            <Workers/>
+            <br/>
             <Appointment/>
+
         </div>
 
 
