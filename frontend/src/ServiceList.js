@@ -23,7 +23,7 @@ import Appointment from "./Appointement";
 const ServiceList = () => {
     return (
 
-            <div className="service-my">
+        <div className="service-my">
                 <div>
                     <div className="artists-header">
                         <span >Services</span>
