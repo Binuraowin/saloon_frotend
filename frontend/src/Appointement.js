@@ -1,12 +1,13 @@
 import { Container, Col, Row, Card, CardBody, CardTitle } from 'reactstrap';
-import { useState } from "react";
+import {useEffect, useState} from "react";
 import { useHistory } from "react-router-dom";
+import axios from "./axios";
 
 const Appointment = () => {
     const [title, setTitle] = useState('');
-    const [name, setName] = useState('');
+    const [userName, setUserName] = useState('');
     const [email, setEmail] = useState('');
-    const [body, setBody] = useState('');
+    const [service, setService] = useState('');
     const [date, setDate] = useState('');
     const [phone, setPhone] = useState('');
     const [artists, setArtists] = useState('binura');
@@ -15,9 +16,19 @@ const Appointment = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const blog = { title, body, artists };
 
-        fetch('http://localhost:8000/blogs/', {
+
+        useEffect(() => {
+            // POST request using axios inside useEffect React hook
+            const blog = { userName,date, time, service };
+            axios.post('https://reqres.in/api/articles', blog)
+                .then(response =>
+                    console.log(response)
+                );
+
+// empty dependency array means this effect will only run once (like componentDidMount in classes)
+        }, []);
+        fetch('localhost:3000/appointments/', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(blog)
@@ -39,8 +50,8 @@ const Appointment = () => {
                             className="bg-light p-2 border"
                             type="text"
                             required
-                            value={name}
-                            onChange={(e) => setName(e.target.value)}
+                            value={userName}
+                            onChange={(e) => setUserName(e.target.value)}
                         />
                         {/*<div className="bg-light p-2 border">.col-6</div>*/}
                     </Col>
@@ -50,7 +61,7 @@ const Appointment = () => {
                             className="bg-light p-2 border"
                             type="email"
                             required
-                            value={date}
+                            value={email}
                             onChange={(e) => setEmail(e.target.value)}
                         />
                         {/*<div className="bg-light p-2 border">.col-6</div>*/}
@@ -85,8 +96,8 @@ const Appointment = () => {
                 <textarea
                     className="bg-light p-2 border"
                     required
-                    value={body}
-                    onChange={(e) => setBody(e.target.value)}
+                    value={service}
+                    onChange={(e) => setService(e.target.value)}
                 />
                 <Row className="mt-3">
                     <Col xs="6">
