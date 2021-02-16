@@ -18,11 +18,26 @@ import {
     Col
 } from 'reactstrap';
 import img6 from './img5.jpg';
-import {useState} from "react";
+import {useEffect, useState} from "react";
+import axios from "./axios";
 
-const Workers = () => {
+function Workers () {
     const [title, setTitle] = useState('Nishani Kulathunga');
     const [subTitle, setSubTitle] = useState('Nail Master');
+
+    const [employees,setEmployees] = useState([]);
+    useEffect(() =>{
+        //get data function
+        async function fetchPosts() {
+            const response = await  axios.get("/employee");
+            //save data to the setvideos from response
+            console.log(response.data.employees)
+            setEmployees(response.data.employees);
+            return response;
+        }
+        fetchPosts().then(r => console.log("done"));
+    },[]);
+
     return (
 
 <div>
@@ -33,47 +48,68 @@ const Workers = () => {
             <p>This is our professional workers</p>
         </div>
     </div>
-    <CardDeck>
-        <Card>
-            <CardImg top width="100%" src={img6} alt="Card image cap" />
-            <div className="card-body-my">
-                <CardBody >
-                    <CardTitle>{title}</CardTitle>
-                    <CardSubtitle> {subTitle}</CardSubtitle>
-                </CardBody>
-            </div>
+    <CardDeck >
+            <Card>
+                {employees.map(
+                    ({name, service, jobRole, workingHours, workedHours, sallery}) =>(
+                        // <Video url={url}
+                        //        channel={channel}
+                        //        description={description}
+                        //        song={song}
+                        //        likes={likes}
+                        //        shares={shares}
+                        //        messages={messages}
+                        <Row>
+                            <div>
+                                <CardImg top width="100%" src={img6} alt="Card image cap" />
+                                <div className="card-body-my">
+                                    <CardBody >
+                                        <CardTitle>{name}</CardTitle>
+                                        <CardSubtitle> {service}</CardSubtitle>
+                                    </CardBody>
 
-        </Card>
-        <Card>
-            <CardImg top width="100%" src={img6} alt="Card image cap" />
-            <div className="card-body-my">
-                <CardBody >
-                    <CardTitle>{title}</CardTitle>
-                    <CardSubtitle> {subTitle}</CardSubtitle>
-                </CardBody>
-            </div>
 
-        </Card>
-        <Card>
-            <CardImg top width="100%" src={img6} alt="Card image cap" />
-            <div className="card-body-my">
-                <CardBody >
-                    <CardTitle>{title}</CardTitle>
-                    <CardSubtitle> {subTitle}</CardSubtitle>
-                </CardBody>
-            </div>
+                                </div>
+                            </div>
+                        </Row>
 
-        </Card>
-        <Card>
-            <CardImg top width="100%" src={img6} alt="Card image cap" />
-            <div className="card-body-my">
-                <CardBody >
-                    <CardTitle>{title}</CardTitle>
-                    <CardSubtitle> {subTitle}</CardSubtitle>
-                </CardBody>
-            </div>
 
-        </Card>
+                    )
+                )}
+
+
+            </Card>
+
+        {/*<Card>*/}
+        {/*    <CardImg top width="100%" src={img6} alt="Card image cap" />*/}
+        {/*    <div className="card-body-my">*/}
+        {/*        <CardBody >*/}
+        {/*            <CardTitle>{title}</CardTitle>*/}
+        {/*            <CardSubtitle> {subTitle}</CardSubtitle>*/}
+        {/*        </CardBody>*/}
+        {/*    </div>*/}
+
+        {/*</Card>*/}
+        {/*<Card>*/}
+        {/*    <CardImg top width="100%" src={img6} alt="Card image cap" />*/}
+        {/*    <div className="card-body-my">*/}
+        {/*        <CardBody >*/}
+        {/*            <CardTitle>{title}</CardTitle>*/}
+        {/*            <CardSubtitle> {subTitle}</CardSubtitle>*/}
+        {/*        </CardBody>*/}
+        {/*    </div>*/}
+
+        {/*</Card>*/}
+        {/*<Card>*/}
+        {/*    <CardImg top width="100%" src={img6} alt="Card image cap" />*/}
+        {/*    <div className="card-body-my">*/}
+        {/*        <CardBody >*/}
+        {/*            <CardTitle>{title}</CardTitle>*/}
+        {/*            <CardSubtitle> {subTitle}</CardSubtitle>*/}
+        {/*        </CardBody>*/}
+        {/*    </div>*/}
+
+        {/*</Card>*/}
     </CardDeck>
 </div>
 
