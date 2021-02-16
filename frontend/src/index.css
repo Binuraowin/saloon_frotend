@@ -111,6 +111,12 @@ code {
   align-content: center;
   text-align: center;
 }
+
+.card-row{
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+}
 .bg-overlay{
   text-align: center;
   display: flex;

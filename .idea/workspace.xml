@@ -23,9 +23,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Appointement.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Appointement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/BackGround.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/BackGround.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Workers.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Workers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/axios.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +76,7 @@
       <updated>1611812649748</updated>
       <workItem from="1611812650885" duration="33000" />
       <workItem from="1613498040019" duration="1436000" />
-      <workItem from="1613505984668" duration="3382000" />
+      <workItem from="1613505984668" duration="4006000" />
     </task>
     <servers />
   </component>
@@ -120,16 +120,5 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1515" height="213" key="GridCell.Tab.0.right/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1613505959511" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/frontend/src/Appointement.js</url>
-          <line>128</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

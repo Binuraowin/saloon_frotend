@@ -46,7 +46,7 @@ const BackGround = () => {
             <br/>
             <Workers/>
             <br/>
-            <Appointment/>
+            {/*<Appointment/>*/}
             <br/>
             <ServiceList/>
 

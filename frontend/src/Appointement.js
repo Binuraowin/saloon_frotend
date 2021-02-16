@@ -18,22 +18,22 @@ const Appointment = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        //
-        // const blog = { userName,date, time, service };
-        // axios.post('https://localhost:3000/appointments', blog)
-        //     .then(response => console.log(response))
-        //     .catch(error => {
-        //         this.setState({ errorMessage: error.message });
-        //         console.error('There was an error!', error);
-        //     });
-        fetch('https://localhost:3000/appointments/', {
-            method: 'GET',
-            headers: { "Content-Type": "application/json" },
-            // body: JSON.stringify(blog)
-        }).then((response) => {
-            console.log(response);
-            history.push('/');
-        })
+
+        const blog = { userName,date, time, service };
+        axios.post('/appointments', blog)
+            .then(response => console.log(response))
+            .catch(error => {
+                this.setState({ errorMessage: error.message });
+                console.error('There was an error!', error);
+            });
+        // fetch('/appointments', {
+        //     method: 'GET',
+        //     headers: { "Content-Type": "application/json" },
+        //     // body: JSON.stringify(blog)
+        // }).then((response) => {
+        //     console.log(response);
+        //     history.push('/');
+        // })
     }
 
     return (

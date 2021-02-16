@@ -59,8 +59,8 @@ function Workers () {
                         //        likes={likes}
                         //        shares={shares}
                         //        messages={messages}
-                        <Row>
-                            <div>
+                        <div className="card-row">
+                            <div >
                                 <CardImg top width="100%" src={img6} alt="Card image cap" />
                                 <div className="card-body-my">
                                     <CardBody >
@@ -71,7 +71,7 @@ function Workers () {
 
                                 </div>
                             </div>
-                        </Row>
+                        </div>
 
 
                     )
