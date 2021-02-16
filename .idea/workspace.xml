@@ -23,7 +23,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Appointement.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Appointement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,5 +94,21 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="159" key="FileChooserDialogImpl/0.0.1536.834/1920.69.1024.738@0.0.1536.834" timestamp="1611812678812" />
+    <state width="1515" height="213" key="GridCell.Tab.0.bottom" timestamp="1613505471324">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1613505471324" />
+    <state width="1515" height="213" key="GridCell.Tab.0.center" timestamp="1613505471324">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="213" key="GridCell.Tab.0.center/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1613505471324" />
+    <state width="1515" height="213" key="GridCell.Tab.0.left" timestamp="1613505471324">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="213" key="GridCell.Tab.0.left/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1613505471324" />
+    <state width="1515" height="213" key="GridCell.Tab.0.right" timestamp="1613505471324">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="213" key="GridCell.Tab.0.right/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1613505471324" />
   </component>
 </project>

@@ -1,6 +1,6 @@
 import { Container, Col, Row, Card, CardBody, CardTitle } from 'reactstrap';
 import {useEffect, useState} from "react";
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 import axios from "./axios";
 
 const Appointment = () => {
@@ -12,30 +12,28 @@ const Appointment = () => {
     const [phone, setPhone] = useState('');
     const [artists, setArtists] = useState('binura');
     const [time, setTime] = useState('8.30am-9.30am');
-    const history = useHistory();
+    // const history = useHistory();
+
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-
-        useEffect(() => {
-            // POST request using axios inside useEffect React hook
-            const blog = { userName,date, time, service };
-            axios.post('https://reqres.in/api/articles', blog)
-                .then(response =>
-                    console.log(response)
-                );
-
-// empty dependency array means this effect will only run once (like componentDidMount in classes)
-        }, []);
-        fetch('localhost:3000/appointments/', {
-            method: 'POST',
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(blog)
-        }).then(() => {
-            console.log('new blog added');
-            history.push('/');
-        })
+        const blog = { userName,date, time, service };
+        axios.post('/appointment', blog)
+            .then(response => console.log(response))
+            .catch(error => {
+                this.setState({ errorMessage: error.message });
+                console.error('There was an error!', error);
+            });
+        // fetch('localhost:3000/appointments/', {
+        //     method: 'POST',
+        //     headers: { "Content-Type": "application/json" },
+        //     body: JSON.stringify(blog)
+        // }).then(() => {
+        //     console.log('new blog added');
+        //     history.push('/');
+        // })
     }
 
     return (
