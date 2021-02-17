@@ -22,8 +22,9 @@
     <list default="true" id="565c3258-44ba-4cae-bd36-b8cd21e4118c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Appointement.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Appointement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/BackGround.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/BackGround.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Workers.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Workers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
     </list>
@@ -76,7 +77,8 @@
       <updated>1611812649748</updated>
       <workItem from="1611812650885" duration="33000" />
       <workItem from="1613498040019" duration="1436000" />
-      <workItem from="1613505984668" duration="4006000" />
+      <workItem from="1613505984668" duration="4197000" />
+      <workItem from="1613534479206" duration="9176000" />
     </task>
     <servers />
   </component>

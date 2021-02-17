@@ -49,36 +49,37 @@ function Workers () {
         </div>
     </div>
     <CardDeck >
-            <Card>
-                {employees.map(
-                    ({name, service, jobRole, workingHours, workedHours, sallery}) =>(
-                        // <Video url={url}
-                        //        channel={channel}
-                        //        description={description}
-                        //        song={song}
-                        //        likes={likes}
-                        //        shares={shares}
-                        //        messages={messages}
-                        <div className="card-row">
-                            <div >
-                                <CardImg top width="100%" src={img6} alt="Card image cap" />
-                                <div className="card-body-my">
-                                    <CardBody >
-                                        <CardTitle>{name}</CardTitle>
-                                        <CardSubtitle> {service}</CardSubtitle>
-                                    </CardBody>
+        {employees.map(
+            ({name, service, jobRole, workingHours, workedHours, sallery}) =>(
+                // <Video url={url}
+                //        channel={channel}
+                //        description={description}
+                //        song={song}
+                //        likes={likes}
+                //        shares={shares}
+                //        messages={messages}
+                <Card>
+
+                    <div className="card-row">
+                        <div >
+                            <CardImg top width="100%" src={img6} alt="Card image cap" />
+                            <div className="card-body-my">
+                                <CardBody >
+                                    <CardTitle>{name}</CardTitle>
+                                    <CardSubtitle> {service}</CardSubtitle>
+                                </CardBody>
 
 
-                                </div>
                             </div>
                         </div>
+                    </div>
+
+                </Card>
 
 
-                    )
-                )}
+            )
+        )}
 
-
-            </Card>
 
         {/*<Card>*/}
         {/*    <CardImg top width="100%" src={img6} alt="Card image cap" />*/}

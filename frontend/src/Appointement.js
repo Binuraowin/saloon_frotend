@@ -1,8 +1,11 @@
-import { Container, Col, Row, Card, CardBody, CardTitle } from 'reactstrap';
+import { Container,Alert, Col, Row, Card, CardBody, CardTitle } from 'reactstrap';
 import {useEffect, useState} from "react";
 import { useHistory } from "react-router-dom";
 import axios from "./axios";
+import  {toast} from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"
 
+toast.configure()
 const Appointment = () => {
     const [title, setTitle] = useState('');
     const [userName, setUserName] = useState('');
@@ -10,19 +13,35 @@ const Appointment = () => {
     const [service, setService] = useState('');
     const [date, setDate] = useState('');
     const [phone, setPhone] = useState('');
-    const [artists, setArtists] = useState('binura');
+    const [consumer, setConsumer] = useState('binura');
     const [time, setTime] = useState('8.30am-9.30am');
     const history = useHistory();
 
+const success = () =>{
+     toast.success('Success Notification!',{
+         position:toast.POSITION.TOP_CENTER,
+         autoClose:8000
+     })
+}
+    const erroralert = () =>{
+        toast.error('Date Already Booked!',{
+            position:toast.POSITION.TOP_LEFT,
+            autoClose:8000
+        })
 
-
+    }
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const blog = { userName,date, time, service };
-        axios.post('/appointments', blog)
-            .then(response => console.log(response))
+        const appointment = { userName,date, time, service,consumer,email,phone};
+        axios.post('/appointments', appointment)
+            .then(response =>
+                // console.log(response),
+                success(),
+                history.push('/appointment')
+            )
             .catch(error => {
+                erroralert()
                 this.setState({ errorMessage: error.message });
                 console.error('There was an error!', error);
             });
@@ -102,8 +121,8 @@ const Appointment = () => {
                         <label>Consumer:</label>
                         <select
                             className="bg-light p-2 border"
-                            value={artists}
-                            onChange={(e) => setArtists(e.target.value)}
+                            value={consumer}
+                            onChange={(e) => setConsumer(e.target.value)}
                         >
                             <option value="binura">binura</option>
                             <option value="owin">owin</option>
