@@ -38,7 +38,7 @@ const success = () =>{
             .then(response =>
                 // console.log(response),
                 success(),
-                history.push('/appointment')
+                history.push('/')
             )
             .catch(error => {
                 erroralert()
