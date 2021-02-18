@@ -7,13 +7,16 @@ import Cards from "./Card";
 import BackGround from "./BackGround";
 import ServiceList from "./ServiceList";
 import About from "./About";
+import Admin from "./Admin";
+import Adminset from "./Admin";
 
 
 function App() {
     return (
         <Router>
             <div className="App">
-                <Navbar />
+                <Adminset/>
+                {/*<Navbar />*/}
                 <div className="content">
                     <Switch>
                         <Route exact path="/">
@@ -30,6 +33,9 @@ function App() {
                         </Route>
                         <Route path="/gallery">
                             <Cards/>
+                        </Route>
+                        <Route path="/admin">
+
                         </Route>
                     </Switch>
                 </div>

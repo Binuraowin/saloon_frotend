@@ -20,13 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="565c3258-44ba-4cae-bd36-b8cd21e4118c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/Admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/AdminEmployees.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/EmployeeList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/dataProvider.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Appointement.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Appointement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Workers.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Workers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +65,9 @@
     <property name="ts.external.directory.path" value="D:\webstrom\WebStorm 2020.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\template admin\saloon_frotend\frontend\src" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\template admin\saloon_frotend" />
     </key>
@@ -78,7 +83,7 @@
       <workItem from="1611812650885" duration="33000" />
       <workItem from="1613498040019" duration="1436000" />
       <workItem from="1613505984668" duration="4197000" />
-      <workItem from="1613534479206" duration="9176000" />
+      <workItem from="1613534479206" duration="29505000" />
     </task>
     <servers />
   </component>
