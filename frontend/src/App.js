@@ -15,8 +15,8 @@ function App() {
     return (
         <Router>
             <div className="App">
-                <Adminset/>
-                {/*<Navbar />*/}
+
+                <Navbar />
                 <div className="content">
                     <Switch>
                         <Route exact path="/">

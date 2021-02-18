@@ -31,8 +31,8 @@ function Workers () {
         async function fetchPosts() {
             const response = await  axios.get("/employee");
             //save data to the setvideos from response
-            console.log(response.data.employees)
-            setEmployees(response.data.employees);
+            console.log(response.data)
+            setEmployees(response.data);
             return response;
         }
         fetchPosts().then(r => console.log("done"));
