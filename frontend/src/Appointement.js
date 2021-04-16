@@ -58,13 +58,13 @@ const success = () =>{
     return (
         <div className="create">
             <h2>Make an Appointment</h2>
-            <form onSubmit={handleSubmit}>
+            <form className="appointment-form">
 
                 <Row className="mt-3">
                     <Col xs="6">
                         <label>Name:</label>
                         <input
-                            className="bg-light p-2 border"
+                            className="bg-light p-2 border name"
                             type="text"
                             required
                             value={userName}
@@ -75,7 +75,7 @@ const success = () =>{
                     <Col xs="6">
                         <label>Email:</label>
                         <input
-                            className="bg-light p-2 border"
+                            className="bg-light p-2 border email"
                             type="email"
                             required
                             value={email}
@@ -88,7 +88,7 @@ const success = () =>{
                     <Col xs="6">
                         <label>Date:</label>
                         <input
-                            className="bg-light p-2 border"
+                            className="bg-light p-2 border date"
                             type="date"
                             required
                             value={date}
