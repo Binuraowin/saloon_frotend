@@ -99,7 +99,7 @@ const success = () =>{
                     <Col xs="6">
                         <label>Phone:</label>
                         <input
-                            className="bg-light p-2 border"
+                            className="bg-light p-2 border phone"
                             type="text"
                             required
                             value={phone}
@@ -111,7 +111,7 @@ const success = () =>{
 
                 <label>Description:</label>
                 <textarea
-                    className="bg-light p-2 border"
+                    className="bg-light p-2 border description"
                     required
                     value={service}
                     onChange={(e) => setService(e.target.value)}
@@ -145,7 +145,7 @@ const success = () =>{
 
 
 
-                <button>Make an Appointment</button>
+                <button className="makeappointment">Make an Appointment</button>
             </form>
         </div>
     );
