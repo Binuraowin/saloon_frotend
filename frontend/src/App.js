@@ -15,7 +15,6 @@ function App() {
     return (
         <Router>
             <div className="App">
-
                 <Navbar />
                 <div className="content">
                     <Switch>
@@ -35,7 +34,7 @@ function App() {
                             <Cards/>
                         </Route>
                         <Route path="/admin">
-
+                            <Admin/>
                         </Route>
                     </Switch>
                 </div>

@@ -10,7 +10,7 @@ const Appointment = () => {
     const [title, setTitle] = useState('');
     const [userName, setUserName] = useState('');
     const [email, setEmail] = useState('');
-    const [service, setService] = useState('');
+    const [service, setService] = useState('Makeup');
     const [date, setDate] = useState('');
     const [phone, setPhone] = useState('');
     const [consumer, setConsumer] = useState('binura');
@@ -18,33 +18,38 @@ const Appointment = () => {
     const history = useHistory();
 
 const success = () =>{
-     toast.success('Success Notification!',{
+     toast.success('Your Appoinment booked!',{
          position:toast.POSITION.TOP_CENTER,
-         autoClose:8000
+         autoClose:3000
      })
 }
     const erroralert = () =>{
         toast.error('Date Already Booked!',{
             position:toast.POSITION.TOP_LEFT,
-            autoClose:8000
+            autoClose:3000
         })
 
     }
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    function submit() {
 
         const appointment = { userName,date, time, service,consumer,email,phone};
-        axios.post('/appointments', appointment)
+        axios.post('http://localhost:3001/appointments', appointment)
             .then(response =>
-                // console.log(response),
-                success(),
+                    // console.log(response),
+                    success(),
                 history.push('/')
             )
             .catch(error => {
                 erroralert()
+                history.push('/')
                 this.setState({ errorMessage: error.message });
                 console.error('There was an error!', error);
             });
+    }
+    const handleSubmit = () => {
+        // e.preventDefault();
+
+
         // fetch('/appointments', {
         //     method: 'GET',
         //     headers: { "Content-Type": "application/json" },
@@ -108,14 +113,24 @@ const success = () =>{
                         {/*<div className="bg-light p-2 border">.col-6</div>*/}
                     </Col>
                 </Row>
-
-                <label>Description:</label>
-                <textarea
-                    className="bg-light p-2 border description"
-                    required
-                    value={service}
+                <label>Consumer:</label>
+                <select
+                    className="bg-light p-2 border"
+                    value={consumer}
                     onChange={(e) => setService(e.target.value)}
-                />
+                >
+                    <option value="Makeup">Makeup</option>
+                    <option value="Beard">Beard</option>
+                    <option value="Makeup">Haircut & Styling</option>
+                    <option value="Beard">Body Treatment</option>
+                </select>
+                {/*<label>Description:</label>*/}
+                {/*<textarea*/}
+                {/*    className="bg-light p-2 border description"*/}
+                {/*    required*/}
+                {/*    value={service}*/}
+                {/*    onChange={(e) =>setService(e.target.value) }*/}
+                {/*/>*/}
                 <Row className="mt-3">
                     <Col xs="6">
                         <label>Consumer:</label>
@@ -145,7 +160,7 @@ const success = () =>{
 
 
 
-                <button className="makeappointment">Make an Appointment</button>
+                <button onClick={submit} className="makeappointment">Make an Appointment</button>
             </form>
         </div>
     );

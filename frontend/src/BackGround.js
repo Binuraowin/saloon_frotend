@@ -31,8 +31,6 @@ const BackGround = () => {
 
                 <CardImgOverlay className="bg-overlay">
 
-
-
                     <CardTitle className="overlay-title"><br/>
 
                         <br/><br/>Welcome to Haircare</CardTitle>
