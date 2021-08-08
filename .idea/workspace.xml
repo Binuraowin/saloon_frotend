@@ -19,22 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="565c3258-44ba-4cae-bd36-b8cd21e4118c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/services/bridal.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/services/haircut.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/services/makeuo2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/services/makeup-art.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/services/makeup.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/services/nail.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/services/nail2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/images/services/scissor.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Appointement.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Appointement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/BackGround.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/BackGround.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/ServiceList.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/ServiceList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Workers.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Workers.js" afterDir="false" />
-    </list>
+    <list default="true" id="565c3258-44ba-4cae-bd36-b8cd21e4118c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,7 +100,7 @@
       <workItem from="1628131126662" duration="374000" />
       <workItem from="1628318698732" duration="11078000" />
       <workItem from="1628394109580" duration="36000" />
-      <workItem from="1628417378325" duration="2401000" />
+      <workItem from="1628417378325" duration="2552000" />
     </task>
     <servers />
   </component>
