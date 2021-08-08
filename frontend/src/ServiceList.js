@@ -19,6 +19,11 @@ import {
 } from 'reactstrap';
 
 import img6 from './beard.png';
+import bridal from "./assets/images/services/bridal.jpg";
+import nail from "./assets/images/services/nail.jpg";
+import haircut from "./assets/images/services/haircut.jpg";
+import makeup from "./assets/images/services/makeup.jpg";
+
 import Appointment from "./Appointement";
 const ServiceList = () => {
     return (
@@ -34,7 +39,7 @@ const ServiceList = () => {
                 <div>
                     <CardDeck>
                         <Card>
-                            <CardImg top width="100%" src={img6} alt="Card image cap" />
+                            <CardImg top width="100%" src={makeup} alt="Card image cap" height="350px" />
                             <CardBody className="card-body-my">
                                 <CardTitle className="card-body-my">Makeup</CardTitle>
                                 <CardText>We Are professional for your Makeup </CardText>
@@ -42,16 +47,16 @@ const ServiceList = () => {
                             </CardBody>
                         </Card>
                         <Card>
-                            <CardImg top width="100%" src={img6} alt="Card image cap" />
+                            <CardImg top width="100%" src={bridal} alt="Card image cap" height="350px"/>
                             <CardBody className="card-body-my">
-                                <CardTitle>Beard</CardTitle>
+                                <CardTitle>Bridal</CardTitle>
                                 <CardText>We Are professional for your Bread </CardText>
 
                             </CardBody>
                         </Card>
 
                         <Card>
-                            <CardImg top width="100%" src={img6} alt="Card image cap" />
+                            <CardImg top width="100%" src={haircut} alt="Card image cap" height="350px" />
                             <CardBody className="card-body-my">
                                 <CardTitle>Haircut &amp; Styling</CardTitle>
                                 <CardText>We Are professional for Haircut and Styling</CardText>
@@ -59,9 +64,9 @@ const ServiceList = () => {
                             </CardBody>
                         </Card>
                         <Card>
-                            <CardImg top width="100%" src={img6} alt="Card image cap" />
+                            <CardImg top width="100%" src={nail} alt="Card image cap" height="350px"/>
                             <CardBody className="card-body-my">
-                                <CardTitle>Body Treatment</CardTitle>
+                                <CardTitle>Nail Arts</CardTitle>
                                 <CardText>We Are professional for your Body Treatment</CardText>
 
                             </CardBody>

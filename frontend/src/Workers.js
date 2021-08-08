@@ -18,6 +18,7 @@ import {
     Col
 } from 'reactstrap';
 import img6 from './img5.jpg';
+import worker from "./assets/images/services/makeup-art.jpg";
 import {useEffect, useState} from "react";
 import axios from "./axios";
 
@@ -62,7 +63,7 @@ function Workers () {
 
                     <div className="card-row">
                         <div >
-                            <CardImg top width="100%" src={img6} alt="Card image cap" />
+                            <CardImg top width="100%" src={worker} alt="Card image cap" />
                             <div className="card-body-my">
                                 <CardBody >
                                     <CardTitle>{name}</CardTitle>

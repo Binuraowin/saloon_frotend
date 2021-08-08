@@ -120,7 +120,7 @@ const success = () =>{
                     onChange={(e) => setService(e.target.value)}
                 >
                     <option value="Makeup">Makeup</option>
-                    <option value="Beard">Beard</option>
+                    <option value="Beard">Bridal</option>
                     <option value="Makeup">Haircut & Styling</option>
                     <option value="Beard">Body Treatment</option>
                 </select>

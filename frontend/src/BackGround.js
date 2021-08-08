@@ -42,12 +42,14 @@ const BackGround = () => {
                 </CardImgOverlay>
             </Card>
             <br/>
-            <Workers/>
-            <br/>
-            {/*<Appointment/>*/}
-            <br/>
             <ServiceList/>
-
+            <br/>
+            {/*<br/>*/}
+            {/*<Appointment/>*/}
+            {/*<br/>*/}
+            {/*<br/>*/}
+            <br/>
+            <Workers/>
         </div>
 
 
