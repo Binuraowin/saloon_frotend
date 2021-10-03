@@ -113,7 +113,7 @@ const success = () =>{
                         {/*<div className="bg-light p-2 border">.col-6</div>*/}
                     </Col>
                 </Row>
-                <label>Consumer:</label>
+                <label>Service:</label>
                 <select
                     className="bg-light p-2 border"
                     value={consumer}
@@ -133,7 +133,7 @@ const success = () =>{
                 {/*/>*/}
                 <Row className="mt-3">
                     <Col xs="6">
-                        <label>Consumer:</label>
+                        <label>Makeup Artist:</label>
                         <select
                             className="bg-light p-2 border"
                             value={consumer}
